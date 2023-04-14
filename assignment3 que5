@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to find the highest frequency character in a string
-char highestFrequencyChar(char str[]) {
-    int frequency[256] = {0}; // Array to store frequency of characters
-    int maxFreq = 0; // Variable to store max frequency
-    char maxChar; // Variable to store character with max frequency
 
-    // Loop through the string and calculate the frequency of each character
+char highestFrequencyChar(char str[]) {
+    int frequency[256] = {0}; 
+    int maxFreq = 0; 
+    char maxChar; 
+    
     for (int i = 0; i < strlen(str); i++) {
         frequency[str[i]]++;
         if (frequency[str[i]] > maxFreq) {
